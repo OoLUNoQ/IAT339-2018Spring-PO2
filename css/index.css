@@ -1,0 +1,48 @@
+#main-nav{
+    display: flex;
+    background: white;
+    top: 0;
+    left:0;
+    width: 100%;
+    border-bottom: 1px solid #444444;
+    text-align: center;
+}
+
+#main-nav img{
+    flex-grow: 0;
+    width: 100px;
+    height: 50px;
+    padding: 10px 10px 0 10px;
+}
+#main-nav a{
+    text-decoration: none;
+    font-size: 1.5em;
+    flex-grow: 2;
+    color: black;
+    padding: 0.5em 0 0.3em 0;
+}
+
+#main-nav a:hover{
+    background-color: #00BFFF;
+    color: white;
+}
+
+#main-nav-active{
+    border-bottom: 15px solid #00BFFF;
+}
+
+h1{
+    text-align: center;
+}
+
+.footer{
+    border-top: 1px solid #444444;
+    padding: 0 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+}
+.footer img{
+    width: 100px;
+}

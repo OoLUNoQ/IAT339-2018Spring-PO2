@@ -1,10 +1,12 @@
 #main-nav{
     display: flex;
-    background: white;
+    position: fixed;
+    background-color: white;
+    z-index: 30;
     top: 0;
     left:0;
     width: 100%;
-    border-bottom: 1px solid #444444;
+    border-bottom: 1px solid #888888;
     text-align: center;
 }
 
@@ -31,18 +33,66 @@
     border-bottom: 15px solid #00BFFF;
 }
 
-h1{
-    text-align: center;
+.slider{
+    display: block;
+    width:100%;
+}
+
+.home-slides{
+    width: 100%;
+    max-height: 600px;
+}
+
+.home-search{
+    position: absolute;
+    z-index: 2;
+    font-size: 2em;
+    left: 30%;
+    top: 35%;
+}
+
+.home-search input{
+    border-radius: 5px;
+    width: 400px;
+    padding-left: 20px;
+}
+
+.home-search button{
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: darkorange;
+    padding: 0 20px;
+}
+
+h2{
+    color: #008dff;
+}
+
+.recommend-row{
+    margin-bottom: 10px;
+}
+
+.recommend-div{
+    padding: 20px 5px;
+}
+
+.recommend-div:hover{
+    border: 1px solid #BBBBBB;
 }
 
 .footer{
-    border-top: 1px solid #444444;
+    border-top: 1px solid #888888;
     padding: 0 20px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
-    background-color: white;
+    background-color: lightgrey;
 }
 .footer img{
-    width: 100px;
+   max-height: 48px;
+    position: absolute;
+}
+
+.footer p{
+    display: block;
+    text-align: center;
 }

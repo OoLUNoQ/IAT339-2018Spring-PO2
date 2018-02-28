@@ -5,3 +5,11 @@ function backHome() {
 function jumpPackage(){
     window.location.replace("package.html")
 }
+
+function orderModalShow() {
+    document.getElementsByClassName("modal")[0].style.display = "block";
+}
+
+function orderModalHide() {
+    document.getElementsByClassName("modal")[0].style.display = "none";
+}

@@ -29,6 +29,25 @@
     color: white;
 }
 
+#mobile-menu-button{
+    display: none;
+}
+
+.mobile-nav{
+    display: none;
+    margin-top: 50px;
+    border-bottom: 1px solid #888888;
+}
+
+.mobile-menu{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 8px 0;
+
+}
+
 #main-nav-active{
     border-bottom: 15px solid #00BFFF;
 }
@@ -206,5 +225,12 @@ h2{
 
     #main-nav a{
         display: none;
+    }
+
+    #mobile-menu-button{
+        display: inline-block;
+        position: absolute;
+        right: 50px;
+        font-weight: bold;
     }
 }

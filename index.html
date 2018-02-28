@@ -16,7 +16,14 @@
 <body>
 <div class="modal">
     <div class="modal-main">
-        <button class="modal-cancel-button" onclick="orderModalHide()">Cancel</button>
+        <h3>Order Now</h3>
+        <p>Your Name: <input type="text" required="required"></p>
+        <p>Credit Card Number: <input type="number" required="required"></p>
+        <p>CVV: <input type="number" size="3" required="required"></p>
+        <div class="row no-margin-row">
+            <button class="modal-submit" onclick="orderSubmit()">Submit</button>
+            <button class="modal-cancel-button" onclick="orderModalHide()">Cancel</button>
+        </div>
     </div>
 </div>
 

@@ -13,3 +13,7 @@ function orderModalShow() {
 function orderModalHide() {
     document.getElementsByClassName("modal")[0].style.display = "none";
 }
+
+function fightResult() {
+    alert("Your Search Has Been Updated");
+}

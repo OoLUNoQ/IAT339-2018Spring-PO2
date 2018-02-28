@@ -1005,3 +1005,7 @@ hr {
 .no-padding-col{
     padding: 0;
 }
+
+.no-margin-row{
+    margin: 0;
+}

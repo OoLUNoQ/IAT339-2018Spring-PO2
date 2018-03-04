@@ -49,7 +49,7 @@
 }
 
 #main-nav-active{
-    border-bottom: 15px solid #00BFFF;
+    border-bottom: 5px solid #00BFFF;
 }
 
 .slider{
@@ -234,3 +234,43 @@ h2{
         font-weight: bold;
     }
 }
+
+.container-style{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.container2 {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin : 10px 0;
+
+}
+
+/* Darker chat container */
+.darker {
+    border-color: #ccc;
+    background-color: #fdfdfd;
+    
+}
+
+
+
+/* Style images */
+.container .contract-image {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Style the right image */
+.container contract-image.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+
+

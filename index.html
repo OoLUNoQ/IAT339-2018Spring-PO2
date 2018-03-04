@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="modal">
+    <div class="modal-main">
+        <h3>Order Now</h3>
+        <p>Your Name: <input type="text" required="required"></p>
+        <p>Credit Card Number: <input type="number" required="required"></p>
+        <p>CVV: <input type="number" size="3" required="required"></p>
+        <div class="row no-margin-row">
+            <button class="modal-submit" onclick="orderSubmit()">Submit</button>
+            <button class="modal-cancel-button" onclick="orderModalHide()">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<nav id="main-nav">
+    <img src="images/header-logo.png" onclick="backHome()">
+    <a href="index.html" id="main-nav-active">Home</a>
+    <a href="package.html">Package</a>
+    <a href="flight.html">Flight</a>
+    <a href="special.html">Special Offer</a>
+    <a href="contact.html">Contact Us</a>
+
+    <p id="mobile-menu-button" onclick="openMobileMenu()">MENU</p>
+</nav>
+
+<div class="mobile-nav" style="display: none;">
+    <a href="index.html"  class="col-md-12 mobile-menu">Home</a>
+    <a href="package.html" class="col-md-12 mobile-menu">Package</a>
+    <a href="flight.html" class="col-md-12 mobile-menu">Flight</a>
+    <a href="special.html" class="col-md-12 mobile-menu">Special Offer</a>
+    <a href="contact.html" class="col-md-12 mobile-menu" >Contact Us</a>
+</div>
+
+<div class="slider">
+    <div class="home-search">
+        <input type="text" placeholder="Search Your Favorite City">
+        <button onclick="jumpPackage()">Search</button>
+    </div>
+    <img class="home-slides" src="images/slide0.jpg">
+    <img class="home-slides" src="images/slide1.jpg">
+    <img class="home-slides" src="images/slide2.jpg">
+</div>
+
+<div class="container" style="margin-bottom: 40px;">
+    <h2>Recommended for You</h2>
+    <div class="row recommend-row">
+        <div class="col-md-4 col-xs-12 recommend-div">
+            <div>
+                <img src="images/cancun1.jpg" style="width: 100%">
+            </div>
+            <h3>Grand Oasis Cancun</h3>
+            <p class="recommend-div-location">Cancun, Mexico</p>
+            <p class="recommend-div-detail">Casual rooms feature balconies with lagoon or sea views, and feature free Wi-Fi, flat-screen TVs, minibars, iPod docks, and tea and coffee makers. A child 12 and under stays with 2 adults at no charge. Room service is offered 24/7.Meals and drinks are included at the resort's multiple bars and restaurants. Other amenities include an outdoor pool, a spa and a gym, plus sports courts, a 9-hole golf course and live entertainment.
+            </p>
+            <h4 class="recommend-div-price">$1800/7days</h4>
+            <div class="recommend-div-order"><button class="recommend-div-order-button" onclick="orderModalShow()">Order Now</button></div>
+        </div>
+        <div class="col-md-4 col-xs-12 recommend-div">
+            <div>
+                <img src="images/cancun2.jpg" style="width: 100%">
+            </div>
+            <h3>Sunset Plaza Beach Resort And Spa</h3>
+            <p class="recommend-div-location">Cancun, Mexico</p>
+            <p class="recommend-div-detail">This upscale, beachfront resort in a modern tower is 2.7 km from the Malecón boardwalk and 4.2 km from the scuba diving center Vallarta Undersea.
+                Featuring marble bathrooms and terraces, the modern rooms also have free Wi-Fi, flat-screen TVs and iPod docks. Suites add living rooms, kitchenettes and in-room whirlpool tubs. Room service is offered 24 hours.
+            </p>
+            <h4 class="recommend-div-price">$1595/6days</h4>
+            <div class="recommend-div-order"><button class="recommend-div-order-button" onclick="orderModalShow()">Order Now</button></div>
+        </div>
+        <div class="col-md-4 col-xs-12 recommend-div">
+            <div>
+                <img src="images/hawaii.jpg" style="height: 210px; width: 100%;">
+            </div>
+            <h3>The Kahala Hotel & Resort</h3>
+            <p class="recommend-div-location">Hawaii, US</p>
+            <p class="recommend-div-detail">The airy rooms and suites feature 40-inch flat-screen TVs, iPod docks and free Internet access, as well as coffeemakers and 24-hour room service. Minibars are available on request. Upgraded rooms have balconies, some with beach or lagoon views, while high-end suites add separate living areas and designer furnishings.
+            </p>
+            <h4 class="recommend-div-price">$670/days</h4>
+            <div class="recommend-div-order"><button class="recommend-div-order-button" onclick="orderModalShow()">Order Now</button></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-xs-12 recommend-div">
+            <div>
+                <img src="images/thailand.jpg" style="width: 100%">
+            </div>
+            <h3>Royalton Bavaro Resort and Spa</h3>
+            <p class="recommend-div-location">Thailand</p>
+            <p class="recommend-div-detail">Chic rooms have Wi-Fi, flat-screen TVs and minibars, plus tea and coffee makers, sofabeds, and whirlpool tubs. All have balconies or patios; most have ocean views. The 1- to 4-bedroom suites add living rooms, hot tubs and/or private pools. Room service is available 24/7. Some quarters are adults-only, and offer butler service.
+            </p>
+            <h4 class="recommend-div-price">$1685/8days</h4>
+            <div class="recommend-div-order"><button class="recommend-div-order-button" onclick="orderModalShow()">Order Now</button></div>
+        </div>
+        <div class="col-md-4 col-xs-12 recommend-div">
+            <div>
+                <img src="images/cuba.jpg" style="width: 100%">
+            </div>
+            <h3>Grand Memories Santa Maria</h3>
+            <p class="recommend-div-location">Cuba</p>
+            <p class="recommend-div-detail">The bright rooms feature flat-screen TVs, safes and sitting areas, as well as Wi-Fi (fee). Suites add dining areas and coffeemakers; upgraded suites include balconies with ocean views. Room service is available 24/7.
+            </p>
+            <h4 class="recommend-div-price">$1500/7days</h4>
+            <div class="recommend-div-order"><button class="recommend-div-order-button" onclick="orderModalShow()">Order Now</button></div>
+        </div>
+        <div class="col-md-4 col-xs-12 recommend-div">
+            <div>
+                <img src="images/bellamar.jpg" style="height: 210px; width: 100%;">
+            </div>
+            <h3>Playa Blanca Resort</h3>
+            <p class="recommend-div-location">Panama</p>
+            <p class="recommend-div-detail">Set on the Playa Blanca beachfront, this upscale, all-inclusive resort occupies a sprawling complex of whitewashed towers, and lies 5 km from Buenaventura golf club and 8 km from Playa Farallón beach.
+                Modern, streamlined rooms and suites have balconies, and provide satellite TV, free Wi-Fi and minibars. Suites add sitting areas; some have views of the beach and/or hydromassage bath tubs. Family rooms add extra bedrooms and bathrooms, as well as pull-out sofas.
+            </p>
+            <h4 class="recommend-div-price">$1300/7days</h4>
+            <div class="recommend-div-order"><button class="recommend-div-order-button" onclick="orderModalShow()">Order Now</button></div>
+        </div>
+    </div>
+</div>
+
+<div class="choose-us">
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+            <h2>Why Choose Us?</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-xs-12">
+            <p>TripAdvisor Multiple Award winning company</p>
+            <p>100% Customizable</p>
+            <p>Local Experts. Middle-man Free Pricing</p>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <p>No Hidden Charges</p>
+            <p>Fast, Reliable and Substantial</p>
+            <p>One of the best in Canada</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="row">
+        <img src="images/footer-logo.png">
+        <p>Copyright © 2018 IAT 339 - Allan&Shane - All rights reserved.</p>
+    </div>
+</div>
+
+</body>
+
+<script>
+    //Slide show Reference from https://www.w3schools.com/w3css/w3css_slideshow.asp
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("home-slides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 2500);
+    }
+</script>
+</html>

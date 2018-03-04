@@ -1,0 +1,21 @@
+/*section for flight*/
+.airline-detail{
+    margin-top: 20px;
+    border-top: 1px solid #444444;
+}
+
+.airline-detail strike{
+    color: #888888;
+    font-size: 0.8em;
+}
+
+
+/*Section for contact page*/
+.contact-us-container{
+    margin-top: 80px;
+    min-height: 80vh;
+}
+
+.g-map img{
+    width: 100%;
+}

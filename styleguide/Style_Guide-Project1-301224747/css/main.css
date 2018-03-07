@@ -1,0 +1,168 @@
+.section nav a{
+  
+  text-decoration: none;
+  color: black;
+  padding: 1em;
+  background-color: #00FFFF;
+  font-family: Arial, Verdana, sans-serif;
+  
+  width: 8em;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+}
+
+nav {
+  
+  padding: 1.5em;
+  text-align: center;
+}
+
+nav a:hover, nav a:active, nav a:focus {
+  background-color:   #00BFFF;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4em;
+  padding-top: 5px;
+  font-family: 'Helvetica', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 2em;
+  font-family: 'cursive', sans-serif;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 2em;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+
+#numbered-list {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size:1.5em;
+  list-style-position: inside;
+}
+
+#bulleted-list {
+   text-align: center;
+  font-family: "Times New Roman", Times, serif;
+ font-size:1.5em;
+  list-style-position: inside;
+}
+#interactive_elements{
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+ font-size:1.5em;
+
+}
+
+#button {
+  font-family: 'Noto Serif', sans-serif;
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-bottom: 2em;
+  background-color: gray;
+    border: none;
+    color: black;
+    padding: 12px 30px;
+    font-size: 1em;
+}
+
+
+#button2 {
+  font-family: 'Noto Serif', sans-serif;
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-bottom: 2em;
+  background-color: gray;
+    border: none;
+    color: black;
+    padding: 12px 30px;
+    font-size: 1em;
+}
+
+
+
+.col-container {
+    display: table;
+    width: 80%;
+   float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col {
+    display: table-cell;
+   }
+
+
+p{
+  font-size:0.8em;
+  font-family: "Times New Roman", Times, serif;
+ text-align: center;
+}
+
+#color1{
+  background-color: #00FFFF;
+  font-size:2em;
+}
+
+#color2{
+  background-color: #00BFFF;
+  font-size:2em;
+}
+
+#color3{
+  background-color: #ccc;
+  font-size:2em;
+}
+
+#color4{
+  background-color: #fdfdfd;
+  font-size:2em;
+}
+
+#text{
+   width:80%;
+   
+   margin-left: auto;
+    margin-right: auto;
+
+}
+#text2{
+   width:60%;
+ 
+   margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+img{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   height: 40%;
+    width: 40%;
+    margin-top:40px;
+    margin-bottom: 40px;
+  }
+
+  .Hawii{
+    width: 30%;
+    height: 30%;
+  }
+
+
+

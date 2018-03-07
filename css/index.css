@@ -130,7 +130,7 @@ h2{
     margin: 10px 0;
 }
 
-.recommend-div-price strike{
+.recommend-div-price del{
     font-size: 0.8em;
     color: #888888;
 }
@@ -191,14 +191,27 @@ h2{
 }
 
 /*section for flight*/
+.flight-search-div input{
+    border: 1px solid #888888;
+}
+
 .airline-detail{
     margin-top: 20px;
     border-top: 1px solid #444444;
 }
 
-.airline-detail strike{
+.airline-detail del{
     color: #888888;
     font-size: 0.8em;
+}
+
+.fight-order-button{
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: darkorange;
+    padding: 2px 15px;
+    font-size: 1.4em;
 }
 
 
@@ -287,6 +300,16 @@ h2{
 @media screen and (max-width: 1200px){
     .home-search{
         left: 25%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .flight-search-div{
+        margin: 0;
+        padding: 0 15px;
+    }
+    .flight-search-div input{
+        margin: 10px 0;
     }
 }
 

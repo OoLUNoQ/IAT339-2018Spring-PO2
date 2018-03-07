@@ -89,49 +89,43 @@
         <h2>Paragraphs with Grid Structure</h2>
 
         <div class="col-container">
-  <div class="col" >
-    <h3>Column 1</h3>
-    <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa eget egestas purus viverra accumsan in nisl nisi. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus.</p>
-  </div>
+<section>
+  <h3>CSS selector:</h3>
+  <p>.row</p>
+  <p>.col-1, .col-2, .col-3,. col-4,. col-6, .col-12
+  <h3>Simple Code</h3>
+  <code>&lt;div class="col-1"&gt;&lt;/div&gt;&lt;div class="col-2"&gt;&lt;/div&gt;&lt;div class="col-3"&gt;&lt;/div&gt;&lt;div class="col-4"&gt;&lt;/div&gt;</code>
+  <h3>Rendered Element:</h3>
+  <div class="row">
+    <div class="col-1">Col 1</div>
+        <div class="col-2">Col 2</div>
+            <div class="col-3">Col 3</div>
+                <div class="col-4">Col 4</div>
+              </div>
+     <div class="row">
+    <div class="col-6">Col 6</div>
+       
+              </div>
+       <div class="row">
+    <div class="col-12">Col 12</div>
+       
+              </div>
 
-  <div class="col" >
-    <h3>Column 2</h3>
-    <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa eget egestas purus viverra accumsan in nisl nisi. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus.</p>
-    
-  </div>
 
-  <div class="col" >
-    <h3>Column 3</h3>
-    <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa eget egestas purus viverra accumsan in nisl nisi. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus.</p>
+            </section>
     
-  </div>
+
+
+    
+
+
 </div>
 
         
       </section>
 
-      <section>
-        <h2>Bulleted Lists</h2>
-        
-
-      <ul id="bulleted-list">
-        <li>Example1</li>
-        <li>Example2</li>
-        <li>Example3</li>
-      
-      </ul>
-
-      </section>
-
-      <section>
-        <h2>Numbered Lists</h2>
-        <ol id="numbered-list">
-        <li>Example1 </li>
-        <li> Example2 </li>
-        <li>Example3 </li>
-        
-      </ol>  
-      </section>
+   
+     
 
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
@@ -146,18 +140,24 @@
           <div class="section">
    
       
-      <nav>
-        <a href="#">Home Page</a>
-        <a href="#">Package</a>
-        <a href="#">Flight</a>
-        <a href="#">Special Offer</a>
-        <a href="#">Contract Us</a>
-      
+     
 
-      </nav>
+
+      <nav id="main-nav">
+  
+    <a href="index.html" id="main-nav-active">Home</a>
+    <a href="package.html">Package</a>
+    <a href="flight.html">Flight</a>
+    <a href="special.html">Special Offer</a>
+    <a href="contact.html">Contact Us</a>
+
+   
+</nav>
       
     </div>
       </section>
+
+
 
       <section>
         <h2>Product Listing</h2>

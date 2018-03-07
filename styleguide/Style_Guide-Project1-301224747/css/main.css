@@ -3,7 +3,7 @@
   text-decoration: none;
   color: black;
   padding: 1em;
-  background-color: #00FFFF;
+  background-color: #ffffff;
   font-family: Arial, Verdana, sans-serif;
   
   width: 8em;
@@ -165,4 +165,78 @@ img{
   }
 
 
+#main-nav{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    z-index: 30;
+    top: 0;
+    left:0;
+    width: 100%;
+    border-bottom: 1px solid #888888;
+    text-align: center;
+}
+
+
+/*Grid Structure*/
+.row{
+  width: 100%;
+  margin: 10px 0;
+}
+
+.col-1{
+  display: inline-block;
+  position: relative;
+  padding: 0 15px;
+  width: 8.333333%;
+  height: 50px;
+  text-align: center;
+  background-color: rgba(189, 167, 209, 0.5);
+}
+
+.col-2{
+  display: inline-block;
+  position: relative;
+  padding: 0 15px;
+  width: 16.666667%;
+  height: 50px;
+  text-align: center;
+  background-color: rgba(189, 167, 209, 0.5);
+}
+
+.col-3{
+  display: inline-block;
+  position: relative;
+  padding: 0 15px;
+  width: 25%;
+  height: 50px;
+  text-align: center;
+  background-color: rgba(189, 167, 209, 0.5);
+}
+
+.col-4{
+  display: inline-block;
+  position: relative;
+  padding: 0 15px;
+  width: 33.333333%;
+  height: 50px;
+  text-align: center;
+  background-color: rgba(189, 167, 209, 0.5);
+}
+
+.col-6{
+  display: inline-block;
+  width: 50%;
+  height: 50px;
+  text-align: center;
+  background-color: rgba(189, 167, 209, 0.5);
+}
+
+.col-12{
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: rgba(189, 167, 209, 0.5);
+}
 

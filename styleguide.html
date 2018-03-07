@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
@@ -8,18 +8,27 @@
 
     <link href="css/styleguide.css" rel="stylesheet">
 
+    <script>
+        function openModal() {
+            document.getElementsByClassName("modal")[0].style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementsByClassName("modal")[0].style.display = "none";
+        }
+    </script>
 </head>
 
 <body>
 <nav id="main-nav">
-    <a href="index.html" id="main-nav-active">Style Guide</a>
-    <a href="wireframes.html">Wireframes</a>
+    <a href="index.html">Home</a>
+    <a href="styleguide.html" id="main-nav-active">Style Guide</a>
+    <a href="http://www.sfu.ca/~smiao/IAT-339/IAT-339-P1-process2/" target="_blank">Wireframes</a>
     <a href="citations.html">Citations</a>
 </nav>
 
 
 <h1>PO2 Updated Style Guide</h1>
-
 <p>This is the style guide for IAT 339 PO2.</p>
 
 
@@ -178,24 +187,24 @@
         <h2>Main Navigation</h2>
 
         <h3>CSS selector:</h3>
-        <p>.nav-main</p>
+        <p>.main-nav</p>
 
         <h3 class="sample-code">Sample code:</h3>
-        <code>&lt;div class="nav-main"&gt;
+        <code>&lt;div class="main-nav"&gt;
             &lt;a href="#"&gt;Home&lt;/a&gt;
-            &lt;a href="#"&gt;About Us&lt;/a&gt;
-            &lt;a href="#"&gt;Products&lt;/a&gt;
+            &lt;a href="#"&gt;Packages&lt;/a&gt;
+            &lt;a href="#"&gt;Flight&lt;/a&gt;
+            &lt;a href="#"&gt;Special&lt;/a&gt;
             &lt;a href="#"&gt;Contact Us&lt;/a&gt;
-            &lt;a href="#"&gt;Account Management&lt;/a&gt;
             &lt;/div&gt;</code>
 
         <h3>Rendered element:</h3>
-        <div class="nav-main">
-            <a href="#" id="nav-main-selected">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Products</a>
+        <div class="main-nav">
+            <a href="#" class="main-nav-active">Home</a>
+            <a href="#">Packages</a>
+            <a href="#">Flight</a>
+            <a href="#">Special</a>
             <a href="#">Contact Us</a>
-            <a href="#">Account Management</a>
         </div>
 
     </section>
@@ -204,25 +213,54 @@
         <h2>Product Listing</h2>
 
         <h3>CSS selector:</h3>
-        <p>.product-item</p>
+        <p>.recommend-div</p>
 
         <h3 class="sample-code">Sample code:</h3>
-        <code>&lt;div class="product-item"&gt;
+        <code>&lt;div class="recommend-div"&gt;
             &lt;img src="images/sample.jpeg"&gt;
-            &lt;p&gt;Sample text description&lt;/p&gt;
-            &lt;p&gt;$9.99/lbs&lt;/p&gt;
-            &lt;button&gt;Add&lt;/button&gt;
+            &lt;h3&gt;Sunset Plaza Beach Resort And Spa&lt;/h3&gt;
+            &lt;p&gt;Cancun, Mexico&lt;/p&gt;
+            &lt;p&gt;This upscale, beachfront resort in a modern tower is 2.7 km from the Malecón boardwalk and 4.2 km from the scuba diving center Vallarta Undersea.
+            Featuring marble bathrooms and terraces, the modern rooms also have free Wi-Fi, flat-screen TVs and iPod docks. Suites add living rooms, kitchenettes and in-room whirlpool tubs. Room service is offered 24 hours.
+            &lt;/p&gt;
+            &lt;h4&gt;1595/6days&lt;/h4&gt;
+            &lt;button&gt;Order Now&lt;/button&gt;
             &lt;/div&gt;</code>
 
         <h3>Rendered element:</h3>
-        <div class="product-item">
-            <img src="images/sample.jpeg">
-            <h3>Orange</h3>
-            <p>Sample text description</p>
-            <p>$9.99/lbs</p>
-            <button class="button-submit">Add</button>
+        <div class="recommend-div">
+            <img src="images/hawaii.jpg" alt="Hawii Image">
+            <h3>Sunset Plaza Beach Resort And Spa</h3>
+            <p>Cancun, Mexico</p>
+            <p>This upscale, beachfront resort in a modern tower is 2.7 km from the Malecón boardwalk and 4.2 km from the scuba diving center Vallarta Undersea.
+                Featuring marble bathrooms and terraces, the modern rooms also have free Wi-Fi, flat-screen TVs and iPod docks. Suites add living rooms, kitchenettes and in-room whirlpool tubs. Room service is offered 24 hours.
+            </p>
+            <h4>$1595/6days</h4>
+            <button class="button-submit">Order Now</button>
         </div>
 
+    </section>
+
+    <section>
+        <h2>Modal</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.modal</p>
+
+        <h3 class="sample-code">Sample code:</h3>
+        <code>&lt;div class="modal"&gt;
+                &lt;div class="modal-main"&gt;&lt;/div&gt;
+                &lt;h3&gt;This is the modal content area.&lt;/h3&gt;
+            &lt;/div&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <button onclick="openModal()">Open Modal</button>
+        <div class="modal">
+            <div class="modal-main">
+                <h3>This is the modal content area.</h3>
+                <button onclick="closeModal()" class="button-submit">Close</button>
+            </div>
+        </div>
     </section>
 
     <section>
@@ -230,7 +268,7 @@
 
         <h3>CSS selector:</h3>
         <p>.row</p>
-        <p>.col-1, .col-2, .col-3, .col-4, .col-6, .col-12</p>
+        <p>.col-1, .col-2, .col-3, .col-4, .col-6, .col-12, col-md-1, col-md-2, col-md-3, col-md-4, col-md-6, col-md-12</p>
 
         <h3 class="sample-code">Sample code:</h3>
         <code>&lt;div class="col-1"&gt;&lt;/div&gt;&lt;div class="col-2"&gt;&lt;/div&gt;&lt;div class="col-3"&gt;&lt;/div&gt;&lt;div class="col-4"&gt;&lt;/div&gt;</code>
@@ -256,17 +294,17 @@
         <h2>Primary Colour Swatches</h2>
 
         <h3>CSS selector:</h3>
-        <p>.p-color-green</p>
+        <p>.p-color-blue</p>
         <p>.p-color-orange</p>
         <p>.p-color-grey</p>
 
         <h3 class="sample-code">Sample code:</h3>
-        <code>&lt;div class="p-color-green"&gt;&lt;/div&gt;</code>
+        <code>&lt;div class="p-color-blue"&gt;&lt;/div&gt;</code>
         <code>&lt;div class="p-color-orange"&gt;&lt;/div&gt;</code>
         <code>&lt;div class="p-color-grey"&gt;&lt;/div&gt;</code>
 
         <h3>Rendered element:</h3>
-        <div class="p-color-green"></div>
+        <div class="p-color-blue"></div>
         <div class="p-color-orange"></div>
         <div class="p-color-grey"></div>
     </section>

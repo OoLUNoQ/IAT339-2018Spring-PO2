@@ -35,8 +35,12 @@
 
 .mobile-nav{
     display: none;
-    margin-top: 50px;
+    position: fixed;
+    top: 50px;
+    background: white;
     border-bottom: 1px solid #888888;
+    width: 100%;
+    z-index: 50;
 }
 
 .mobile-menu{
@@ -55,11 +59,12 @@
 .slider{
     display: block;
     width:100%;
+    margin-top: 50px;
 }
 
 .home-slides{
     width: 100%;
-    max-height: 600px;
+    height: 500px;
 }
 
 .home-search{
@@ -145,11 +150,10 @@ h2{
 
 .choose-us{
     text-align: center;
-    margin-bottom: 50px;
     color: white;
-    background-image: url("../images/blue-banner.jpg");
+    background-image: url("../images/blue-banner.gif");
     background-size: cover;
-    padding: 30px 0;
+    padding: 40px 0;
 }
 
 .choose-us h2{
@@ -160,7 +164,7 @@ h2{
     border-top: 1px solid #BBBBBB;
     padding: 0 20px 20px 20px;
     width: 100%;
-    background-color: #DDDDDD;
+    background-color: #EEEEEE;
 }
 
 .footer img{
@@ -175,6 +179,15 @@ h2{
 
 .footer-link{
     text-align: center;
+}
+
+.footer-link a{
+    color: #666666;
+    text-decoration: underline;
+}
+
+.footer-link a:hover{
+    color: #008dff;
 }
 
 /*section for modal*/
@@ -204,6 +217,10 @@ h2{
     text-align: center;
 }
 
+.modal-main-input{
+    margin: 10px 0;
+}
+
 .modal-submit{
     border-radius: 5px;
     border: none;
@@ -222,17 +239,39 @@ h2{
     font-size: 1.4em;
 }
 
-@media screen and (max-width: 500px){
-    .footer img{
-        display: none;
+@media screen and (max-width: 1200px){
+    .home-search{
+        left: 25%;
     }
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 920px){
     .home-search{
-        display: none;
+        left: 20%;
+        top: 25%;
     }
+    .home-slides{
+        height: 350px;
+    }
+}
 
+@media screen and (max-width: 725px){
+    .home-search{
+        font-size:1.5em;
+    }
+    .home-search input{
+        width: 300px;
+    }
+    .home-slides{
+        height: 300px;
+    }
+    .modal-main{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 620px){
     #main-nav a{
         display: none;
     }
@@ -242,6 +281,18 @@ h2{
         position: absolute;
         right: 50px;
         font-weight: bold;
+    }
+    .home-search{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .footer img{
+        display: none;
+    }
+    .home-slides{
+        height: 200px;
     }
 }
 

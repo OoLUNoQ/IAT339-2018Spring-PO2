@@ -10,6 +10,11 @@ function orderModalShow() {
     document.getElementsByClassName("modal")[0].style.display = "block";
 }
 
+function orderSubmit() {
+    alert("Your order has benn placed successfully!");
+    window.location.reload();
+}
+
 function orderModalHide() {
     document.getElementsByClassName("modal")[0].style.display = "none";
 }

@@ -17,9 +17,9 @@
 <div class="modal">
     <div class="modal-main">
         <h3>Order Now</h3>
-        <p>Your Name: <input type="text" required="required"></p>
-        <p>Credit Card Number: <input type="number" required="required"></p>
-        <p>CVV: <input type="number" size="3" required="required"></p>
+        <div class="modal-main-input"><label>Your Name: <input type="text"></label></div>
+        <div class="modal-main-input"><label>Credit Card Number: <input type="number"></label></div>
+        <div class="modal-main-input"><label>CVV: <input type="number" size="3"></label></div>
         <div class="row no-margin-row">
             <button class="modal-submit" onclick="orderSubmit()">Submit</button>
             <button class="modal-cancel-button" onclick="orderModalHide()">Cancel</button>
@@ -124,12 +124,18 @@
 
 
 <div class="footer">
-    <div class="footer">
-        <div class="row">
-            <img src="images/footer-logo.png">
-            <p>Copyright © 2018 IAT 339 - Allan&Shane - All rights reserved.</p>
+    <div class="row">
+        <img src="images/footer-logo.png" alt=" the place the fotter-logo">
+        <p>Copyright © 2018 IAT 339 - Allan&Shane - All rights reserved.</p>
+    </div>
+    <div class="row no-margin-row footer-link">
+        <div class="col-md-4 col-md-offset-4 col-xs-12">
+            <div class="col-md-4 col-xs-12"><a href="styleguide.html">Style Guide</a></div>
+            <div class="col-md-4 col-xs-12"><a href="citations.html">Citations</a></div>
+            <div class="col-md-4 col-xs-12"><a href="https://github.com/OoLUNoQ/IAT339-2018Spring-PO2">Github</a></div>
         </div>
     </div>
+</div>
 
 </body>
 

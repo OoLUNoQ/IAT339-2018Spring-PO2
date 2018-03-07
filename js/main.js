@@ -30,5 +30,8 @@ function openMobileMenu() {
     }else {
         document.getElementsByClassName("mobile-nav")[0].style.display = "none";
     }
+}
 
+function commentSubmit() {
+    alert("Thanks for your feedback~");
 }

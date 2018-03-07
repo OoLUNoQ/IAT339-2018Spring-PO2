@@ -190,6 +190,47 @@ h2{
     color: #008dff;
 }
 
+/*section for flight*/
+.airline-detail{
+    margin-top: 20px;
+    border-top: 1px solid #444444;
+}
+
+.airline-detail strike{
+    color: #888888;
+    font-size: 0.8em;
+}
+
+
+/*Section for contact page*/
+.contact-us-container{
+    margin-top: 20px;
+}
+
+.g-map img{
+    width: 100%;
+}
+
+.comment-box{
+    margin: 15px 0;
+}
+
+.comment-box input{
+    width: 600px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.comment-box button{
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: darkorange;
+    padding: 2px 15px;
+    font-size: 1.4em;
+}
+
 /*section for modal*/
 .modal{
     z-index: 1000;
@@ -257,6 +298,9 @@ h2{
     .home-slides{
         height: 350px;
     }
+    .comment-box input{
+        width: 400px;
+    }
 }
 
 @media screen and (max-width: 725px){
@@ -289,6 +333,9 @@ h2{
     .home-search{
         display: none;
     }
+    .comment-box input{
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -297,6 +344,10 @@ h2{
     }
     .home-slides{
         height: 200px;
+    }
+    .comment-box input{
+        width: 350px;
+        margin-bottom: 10px;
     }
 }
 

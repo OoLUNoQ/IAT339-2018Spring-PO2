@@ -158,7 +158,7 @@ h2{
 
 .footer{
     border-top: 1px solid #BBBBBB;
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
     width: 100%;
     background-color: #DDDDDD;
 }
@@ -170,6 +170,10 @@ h2{
 
 .footer p{
     display: block;
+    text-align: center;
+}
+
+.footer-link{
     text-align: center;
 }
 
@@ -216,6 +220,12 @@ h2{
     background-color: #888888;
     padding: 2px 15px;
     font-size: 1.4em;
+}
+
+@media screen and (max-width: 500px){
+    .footer img{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 414px){
